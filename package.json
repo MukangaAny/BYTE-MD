@@ -1,14 +1,14 @@
 {
    "name": "byte-md",
-   "version": "2.5.0",
+   "version": "1.5.0",
    "description": "World's Simplest Bot created by TalkDrove",
    "main": "talkdrove.js",
    "type": "commonjs",
    "scripts": {
       "run": "pm2 start . --deep-monitoring --attach --name HyHamza || node .",
       "HyHamza ": "pm2 start . --deep-monitoring --attach --name HyHamza || node .",
-      "start": "pm2 start . --attach --name HyHamza",
-      "stop": "pm2 stop HyHamza",
+      "start": "pm2 start . --attach --name Byte",
+      "stop": "pm2 stop Byte",
       "heroku-postbuild": "git clone https://github.com/HyHamza/BYTE-MD.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
       "fis-heroku-postbuild": "git clone https://github.com/HyHamza/BYTE-MD.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
       "postinstall": "npx puppeteer@latest install --y"
@@ -65,7 +65,7 @@
       "youtubei.js": "^7.0.0",
       "ytdl-core": "^4.11.5",
       "ytdl-secktor": "^0.0.1-development",
-      "ytdl-core": "github:soya-daizu/ytdl-core#sig-patch"
+     "ytdl-core": "github:HyHamza/TalkDrove-yt-dl-core"
    },
    "directories": {
       "lib": "lib",
